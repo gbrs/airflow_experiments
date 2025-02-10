@@ -1,5 +1,7 @@
 // на основе кода из https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
 
+// https://labs.play-with-docker.com
+
 // скачиваем docker-compose.yaml
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.4/docker-compose.yaml'
 
@@ -10,3 +12,5 @@ AIRFLOW_UID=50000
 
 docker compose up airflow-init
 docker compose up
+
+// airflow airflow
