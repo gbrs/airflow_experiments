@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 @dag(
     dag_id='super_fast_logger',
     start_date=datetime(2024, 1, 1, 0, 0, 10),
-    schedule_interval=timedelta(seconds=10),
+    schedule_interval=timedelta(seconds=10),  # попробовать cron, раз в минуту: schedule_interval="1 * * * *"
     catchup=False,
     max_active_runs=1,
 )
